@@ -15,7 +15,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   void getLocation() async {
    Location location = Location();
    await location.getCurrentLocation();
-   String url = 'https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=66e6f6f7fc1f85e9297708d0462b034a';
+   String url = 'https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=[API_KEY]';
    NetworkHelper networkHelper = NetworkHelper(url);
 
    var weatherData = await networkHelper.getData();
