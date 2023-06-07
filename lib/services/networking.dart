@@ -12,10 +12,6 @@ class NetworkHelper {
     if(response.statusCode == 200) {
       String data = response.body;
       return jsonDecode(data);
-
-      /*var temperature = decodedData['main']['temp'];
-      var condition = decodedData['weather'][0]['id'];
-      var name = decodedData['name'];*/
     }
   }
 }
